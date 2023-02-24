@@ -1,13 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+html, body {
+  height:100%;
+} 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Arial, sans-serif;
+   background-image: url("https://cdn.betwaygroup.com/medusa-production/1001/the-hunch-mobile.webp");
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height:100vh;
+}
+ul {
+  list-style-type: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
 }
+
+ .topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.bottomnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  white-space: nowrap;
+}
+.bottomnav a:hover {
+  border-bottom: 1px solid #4CAF50;
+}
+.bottomnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+.btn-primary {
+  --bs-btn-bg: #4CAF50 !important; 
+  --bs-btn-border-color: #4CAF50 !important;
+  --bs-btn-hover-bg: #4CAF50 !important;
+  --bs-btn-hover-border-color: #4CAF50 !important;
+  --bs-btn-focus-shadow-rgb: 49,132,253
+  --bs-btn-active-bg: #4CAF50 !important;
+  --bs-btn-active-border-color: #4CAF50 !important;
+  --bs-btn-disabled-bg: #4CAF50 !important;
+  --bs-btn-disabled-border-color: #4CAF50 !important;
+}
+
+.logo {
+  width: 30%;
+  padding-left: 10px
+}
+
+.topnav{
+background-color: black;
+}
+
+.loginBtn{
+  background-color: #0eb305;
+  color: #ffff;
+  border: none;
+}
+.signupBtn{
+  color: #0eb305;
+  border: none;
+}
+
+.floatRight {
+  position: absolute;
+  right: 0;
+  top: -4px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.bottomnav{
+  display: flex;
+  background-color: #30302f;
+  color: #ffff;
+  font-weight: 700;
+  margin-top: -15px;
+  justify-content: space-evenly;
+}
+
+.topnav{
+  z-index: 999;
+  width: 100%
+}
+
+.site-wrapper {
+  position: relative;
+  height: 100%;
+}
+
+
+
+
+
