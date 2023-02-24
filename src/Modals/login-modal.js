@@ -36,6 +36,7 @@ const LoginModal = () => {
         throw new Error('Sign-in request failed');
       }
       const data = await response.json();
+      localStorage.setItem('userInfo', JSON.stringify(data));
       setShow(false);
       return data;
     } catch (ex) {
