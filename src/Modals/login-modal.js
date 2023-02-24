@@ -50,7 +50,9 @@ const LoginModal = () => {
             Login
           </Button>
           <Modal show={show} onHide={handleClose}>
+            {errorMessage && <div className="alert alert-danger">{errorMessage}</div>}
             <Modal.Header closeButton>
+            
               <Modal.Title>Login</Modal.Title>
             </Modal.Header>
             <Modal.Body>
